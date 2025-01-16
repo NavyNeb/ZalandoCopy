@@ -39,7 +39,7 @@ const ProductItem = ({ product }: Props) => {
         {product.reduction.text && (
           <div className="flex items-center justify-start my-1">
             <span className="text-text-grey text-xs font-helveticaRegular">
-              {product.reduction.text}
+              {product.reduction.text}{":"}<span className="line-through px-1" >{product.reduction.amount}</span>
             </span>
             <span className="text-red-700 text-xs font-helveticaMedium">
               {product.reduction.percent}

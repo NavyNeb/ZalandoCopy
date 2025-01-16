@@ -96,14 +96,14 @@ const PRODUCTS_MAIN = [
   ];
 
   const PRODUCTS: ProductType[] = [
-    { id: 1, image: ShoesImage, name: "Classic Nice Shoe - Dark white", boutique: "Nike", price: "50,95 €", reduction: { text: "À l'origine :18,99 €", percent: "-15%",  }, premium: true, promo: false },
-    { id: 2, image: ShoesImage, name: "Classic Nice Shoe - Dark white", boutique: "Nike", price: "50,95 €", reduction: { text: "À l'origine :18,99 €", percent: "-15%",  }, premium: false, promo: true },
-    { id: 3, image: ShoesImage, name: "Classic Nice Shoe - Dark white", boutique: "Nike", price: "50,95 €", reduction: { text: "À l'origine :18,99 €", percent: "-15%",  }, premium: false, promo: true },
-    { id: 4, image: ShoesImage, name: "Classic Nice Shoe - Dark white", boutique: "Nike", price: "50,95 €", reduction: { text: "À l'origine :18,99 €", percent: "-15%",  }, premium: true, promo: false },
-    { id: 5, image: ShoesImage, name: "Classic Nice Shoe - Dark white", boutique: "Nike", price: "50,95 €", reduction: { text: "À l'origine :18,99 €", percent: "-15%",  }, premium: false, promo: true },
-    { id: 6, image: ShoesImage, name: "Classic Nice Shoe - Dark white", boutique: "Nike", price: "50,95 €", reduction: { text: "À l'origine :18,99 €", percent: "-15%",  }, premium: false, promo: true },
-    { id: 7, image: ShoesImage, name: "Classic Nice Shoe - Dark white", boutique: "Nike", price: "50,95 €", reduction: { text: "À l'origine :18,99 €", percent: "-15%",  }, premium: false, promo: true },
-    { id: 8, image: ShoesImage, name: "Classic Nice Shoe - Dark white", boutique: "Nike", price: "50,95 €", reduction: { text: "À l'origine :18,99 €", percent: "-15%",  }, premium: true, promo: true },
+    { id: 1, image: ShoesImage, name: "Classic Nice Shoe - Dark white", boutique: "Nike", price: "50,95 €", reduction: { text: `À l'origine`, amount: "18,99 €", percent: "-15%",  }, premium: true, promo: false },
+    { id: 2, image: ShoesImage, name: "Classic Nice Shoe - Dark white", boutique: "Nike", price: "50,95 €", reduction: { text: "À l'origine", amount: "18,99 €", percent: "-15%",  }, premium: false, promo: true },
+    { id: 3, image: ShoesImage, name: "Classic Nice Shoe - Dark white", boutique: "Nike", price: "50,95 €", reduction: { text: "À l'origine", amount: "18,99 €", percent: "-15%",  }, premium: false, promo: true },
+    { id: 4, image: ShoesImage, name: "Classic Nice Shoe - Dark white", boutique: "Nike", price: "50,95 €", reduction: { text: "À l'origine", amount: "18,99 €", percent: "-15%",  }, premium: true, promo: false },
+    { id: 5, image: ShoesImage, name: "Classic Nice Shoe - Dark white", boutique: "Nike", price: "50,95 €", reduction: { text: "À l'origine", amount: "18,99 €", percent: "-15%",  }, premium: false, promo: true },
+    { id: 6, image: ShoesImage, name: "Classic Nice Shoe - Dark white", boutique: "Nike", price: "50,95 €", reduction: { text: "À l'origine", amount: "18,99 €", percent: "-15%",  }, premium: false, promo: true },
+    { id: 7, image: ShoesImage, name: "Classic Nice Shoe - Dark white", boutique: "Nike", price: "50,95 €", reduction: { text: "À l'origine", amount: "18,99 €", percent: "-15%",  }, premium: false, promo: true },
+    { id: 8, image: ShoesImage, name: "Classic Nice Shoe - Dark white", boutique: "Nike", price: "50,95 €", reduction: { text: "À l'origine", amount: "18,99 €", percent: "-15%",  }, premium: true, promo: true },
     // Add more products as needed
   ];
 

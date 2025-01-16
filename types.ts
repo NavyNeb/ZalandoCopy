@@ -32,6 +32,7 @@ type ProductType = {
     reduction: {
         text: string;
         percent: string;
+        amount: string
     };
     promo: boolean;
 }
