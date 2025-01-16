@@ -13,16 +13,16 @@ import { FlagIcon, Plus } from "lucide-react";
 
 const ProductInfoSection = () => {
   return (
-    <div className="mt-10 space-y-10 px-4 sm:mt-16 sm:px-0 lg:mt-0">
+    <div className="mt-6 lg:mt-0 space-y-10 ">
       {/* Product title and Price section */}
-      <div>
-        <h1 className="text-[1.75rem] leading-none font-tiemposLight tracking-tight text-black">
+      <div className="px-6" >
+        <h1 className="text-xl lg:text-[1.75em] leading-none font-tiemposLight tracking-tight text-black">
           Anna Field
         </h1>
 
         <div className="mt-1">
           <span className="sr-only">Product information</span>
-          <p className="text-[1.75rem] leading-none tracking-tight text-black font-helveticaBold font-bold m-0">
+          <p className="text-xl lg:text-[1.75em] leading-none tracking-tight text-black font-helveticaBold font-bold m-0">
             Pantalon classique - dark grey
           </p>
         </div>
@@ -44,7 +44,7 @@ const ProductInfoSection = () => {
       <ProductImageVariants />
 
       {/* Product CTA section */}
-      <div className="space-y-2">
+      <div className="space-y-2 px-6">
         <Tips
           title="Vous n'êtes pas sûr·e de votre taille ?"
           icon={<RecommendationIcon />}
@@ -81,7 +81,7 @@ const ProductInfoSection = () => {
         />
         <button
           className={classNames(
-            "flex items-center justify-between flex-1 w-full h-14 py-4 px-2 border-t border-b border-border-secondary"
+            "flex items-center justify-between flex-1 w-full h-14 py-4 px-6 md:px-2 border-t border-b border-border-secondary"
           )}
         >
           <span className="sm-bold-text ">Anna Field</span>
@@ -90,7 +90,7 @@ const ProductInfoSection = () => {
             Suivre
           </Button>
         </button>
-        <div className="sm-normal-text text-text-interactive flex items-center gap-x-2 my-5 hover:underline" >
+        <div className="sm-normal-text text-text-interactive px-6 flex items-center gap-x-2 my-5 md:px-0 hover:underline" >
           <FlagIcon className="text-text-interactive h-4 w-4" /> Signaler un problème d'ordre juridique
         </div>
       </div>

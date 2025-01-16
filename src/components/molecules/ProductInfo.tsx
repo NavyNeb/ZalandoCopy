@@ -23,7 +23,7 @@ const ProductInfos = ({ title="Title de la section", description="Lorem ipsum si
       <button
         onClick={toggleOpen}
         className={classNames(
-          "flex items-center justify-between flex-1 w-full h-14 py-4 px-2 border-t border-border-secondary hover:border-b-0 hover:ring-1 hover:ring-black hover:bg-[#00000033]" )}
+          "flex items-center justify-between flex-1 w-full h-14 py-4 px-6 md:px-2 border-t border-border-secondary hover:border-b-0 hover:ring-1 hover:ring-black hover:bg-[#00000033]" )}
       >
         <span className="sm-bold-text ">
           {title}

@@ -1,5 +1,4 @@
 import { classNames } from "@/lib/utils";
-import React from "react";
 import { SizesDataType } from "types";
 
 type Props = {

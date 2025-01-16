@@ -1,4 +1,3 @@
-import React from 'react'
 import HeartIcon from '../atoms/HeartIcon'
 
 type Props = {
@@ -9,7 +8,7 @@ const ProductMain = ({ product }: Props) => {
   return (
     <li
               key={product.id}
-              className="md:min-w-[390px] lg:min-w-96 basis-[33.333%] overflow-hidden relative bg-transparent"
+              className="min-w-[384px] md:min-w-[390px] lg:min-w-96 basis-[33.333%] overflow-hidden relative bg-transparent"
             >
               <article>
                 <img

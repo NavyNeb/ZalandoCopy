@@ -1,6 +1,3 @@
-import React, { useRef } from "react";
-import { motion } from "framer-motion";
-import HeartIcon from "../atoms/HeartIcon";
 import { PRODUCTS, PRODUCTS_MAIN } from "@/data";
 import ProductMain from "../molecules/ProductMain";
 import ProductItem from "../molecules/ProductItem";
@@ -16,7 +13,7 @@ type Props = {
 const ProductListRow = ({ title, desc, type = "products" }: Props) => {
   return (
     <div className="w-full my-20">
-      <div className="pl-[75px] lg:max-w-7xl">
+      <div className="pl-6 lg:pl-[75px] lg:max-w-7xl">
         <p className="sm-bold-text text-3xl leading-none">{title}</p>
         <p className="text-black text-3xl font-tiemposReguar font-normal">
           {desc}
@@ -24,7 +21,7 @@ const ProductListRow = ({ title, desc, type = "products" }: Props) => {
       </div>
       <ul
         style={{ scrollbarWidth: "none" }}
-        className="flex pl-[75px] items-center justify-start overflow-x-scroll scroll-bar-hide gap-x-4 gap-y-3 w-full my-4 scroll-pl-[88px] "
+        className="flex pl-6 lg:pl-[75px] items-start justify-start overflow-x-scroll scroll-bar-hide gap-x-4 gap-y-3 w-full my-4 scroll-pl-[88px] "
       >
         {/* Product items */}
         { type === "main" && PRODUCTS_MAIN.map((product) => {

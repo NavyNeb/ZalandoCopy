@@ -1,4 +1,3 @@
-import React from "react";
 import HeartIcon from "../atoms/HeartIcon";
 import { ProductType } from "types";
 
