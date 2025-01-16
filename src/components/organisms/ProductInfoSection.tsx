@@ -17,13 +17,13 @@ const ProductInfoSection = () => {
       {/* Product title and Price section */}
       <div className="px-6" >
         <h1 className="text-xl lg:text-[1.75em] leading-none font-tiemposLight tracking-tight text-black">
-          Anna Field
+          Nike
         </h1>
 
         <div className="mt-1">
           <span className="sr-only">Product information</span>
           <p className="text-xl lg:text-[1.75em] leading-none tracking-tight text-black font-helveticaBold font-bold m-0">
-            Pantalon classique - dark grey
+            Classic Nice Shoe - Dark white
           </p>
         </div>
 
@@ -84,7 +84,7 @@ const ProductInfoSection = () => {
             "flex items-center justify-between flex-1 w-full h-14 py-4 px-6 md:px-2 border-t border-b border-border-secondary"
           )}
         >
-          <span className="sm-bold-text ">Anna Field</span>
+          <span className="sm-bold-text ">Nike</span>
           <Button variant={"outline"} size={"icon"} className="w-fit px-2 h-10">
             <Plus />
             Suivre
