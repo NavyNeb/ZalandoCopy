@@ -1,4 +1,4 @@
-import HeartIcon from '../atoms/HeartIcon'
+import LikeButton from './LikeButton'
 
 type Props = {
     product: any
@@ -8,7 +8,7 @@ const ProductMain = ({ product }: Props) => {
   return (
     <li
               key={product.id}
-              className="min-w-[384px] md:min-w-[390px] lg:min-w-96 basis-[33.333%] overflow-hidden relative bg-transparent"
+              className="w-[50%] basis-[50%] xl:w-[33.3333%] xl:basis-[33.3333%] shrink-0 snap-start snap-always overflow-hidden relative bg-transparent"
             >
               <article>
                 <img
@@ -19,9 +19,7 @@ const ProductMain = ({ product }: Props) => {
                 <div className="bg-transparent">
                   <h3 className="sm-normal-text mt-2">{product.name}</h3>
                 </div>
-                <div className="bg-white h-10 w-10 p-2 flex items-center justify-center absolute right-0 top-2">
-                  <HeartIcon />
-                </div>
+                <LikeButton />
               </article>
             </li>
   )

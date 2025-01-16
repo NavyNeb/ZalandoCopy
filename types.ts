@@ -34,7 +34,7 @@ type ProductType = {
         percent: string;
         amount: string
     };
-    promo: boolean;
+    tags: string[];
 }
 
 export type { 

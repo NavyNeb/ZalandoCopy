@@ -1,5 +1,6 @@
-import HeartIcon from "../atoms/HeartIcon";
 import { ProductType } from "types";
+import LikeButton from "./LikeButton";
+import { classNames } from "@/lib/utils";
 
 type Props = {
   product: ProductType;
@@ -11,18 +12,25 @@ const ProductItem = ({ product }: Props) => {
       key={product.id}
       className="w-[50%] basis-[50%] md:w-[25%] md:basis-[25%] shrink-0 snap-start snap-always h-full cursor-pointer overflow-hidden bg-transparent flx flex-col items-start"
     >
-      <article className="w-full h-full" >
+      <article className="w-full h-full relative" >
         <div className="relative w-full h-auto">
           <img
             src={product.image}
             alt={product.name}
             className="w-full h-full bg-transparent object-cover object-center"
           />
-          {product.promo && (
-            <div className="bg-red-700 h-6 w-fit text-white text-xs font-helveticaMedium p-2 flex items-center justify-center absolute bottom-2 left-">
-              <span>Promo</span>
-            </div>
-          )}
+          <ul className="list-none flex items-center justify-start gap-[2px] absolute bottom-2 left-0" >
+            {
+              product.tags.map((tag) => (
+                <li key={tag} className={classNames(
+                  "h-6 w-fit text-xs font-helveticaMedium p-2 flex items-center justify-center",
+                  tag === "Promo" ? "bg-red-700 text-white" : "bg-white text-black"
+                )}>
+                  <span>{tag}</span>
+            </li>
+              ))
+            }
+          </ul>
         </div>
         <div className="bg-transparent">
           <p className="text-black text-sm font-helveticaMedium leading-none mt-2">
@@ -32,9 +40,6 @@ const ProductItem = ({ product }: Props) => {
           <p className="text-red-700 text-sm font-helveticaBold mt-2 leading-none">
             {product.price}
           </p>
-        </div>
-        <div className="bg-white h-10 w-10 p-2 flex items-center justify-center absolute right-0 top-2">
-          <HeartIcon />
         </div>
         {product.reduction.text && (
           <div className="flex items-center justify-start my-1">
@@ -54,6 +59,7 @@ const ProductItem = ({ product }: Props) => {
             <span className="sm-normal-text">Livraison premium</span>
           </div>
         )}
+        <LikeButton />
       </article>
     </li>
   );

@@ -38,7 +38,7 @@ const ProductListRow = ({ title, desc, type = "products" }: Props) => {
 
       <ul
         style={{ scrollbarWidth: "none" }}
-        className="product-container relative box-border border-0 flex items-start justify-start flex-nowrap overflow-x-scroll scroll-bar-hide gap-x-4 gap-y-3 w-full bg-pink-500 scroll-pl-[88px] "
+        className="product-container relative box-border border-0 flex items-start justify-start flex-nowrap overflow-x-scroll scroll-bar-hide gap-x-4 gap-y-3 w-full scroll-pl-[88px] "
       >
         {/* Product items */}
         {type === "main" &&
