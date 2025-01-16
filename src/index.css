@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "HelveticaNowText-Regular", Helvetica, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #23262F;
+  background-color: #FCFCFD;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-width: 100vw;
+  min-height: 100vh;
+  overflow: scroll;
+}
+
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+
+  @font-face {
+    font-family: "HelveticaNowText-Regular";
+    src: url('./assets/fonts/HelveticaNowText-Regular.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: "HelveticaNowText-Medium";
+    src: url('./assets/fonts/HelveticaNowText-Medium.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: "HelveticaNowText-Bold";
+    src: url('./assets/fonts/HelveticaNowText-Bold.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: "Tiempos-Light";
+    src: url('./assets/fonts/TiemposHeadline-Light.otf') format('otf');
+  }
+  
+  @font-face {
+    font-family: "Tiempos-Regular";
+    src: url('./assets/fonts/TiemposHeadline-Regular.otf') format('otf');
+  }
+ 
+  @font-face {
+    font-family: "Tiempos-Medium";
+    src: url('./assets/fonts/TiemposHeadline-Medium.otf') format('otf');
+  }
+
+  .sm-bold-text {
+    @apply text-sm text-black font-helveticaBold
+  }
+  
+  .xs-bold-text {
+    @apply text-xs text-black font-helveticaBold
+  }
+
+  .sm-normal-text {
+    @apply text-sm text-black font-helveticaRegular
+  }
+  
+  .xs-normal-text {
+    @apply text-xs text-black font-helveticaRegular
+  }
+}
+
