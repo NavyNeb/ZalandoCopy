@@ -41,9 +41,6 @@ export default {
         "tiemposMedium": "Tiempos-Medium"
       }
   	}
-  },
-  plugins: [
-    require("tailwindcss-animate"),
-  ],
+  }
 }
 
