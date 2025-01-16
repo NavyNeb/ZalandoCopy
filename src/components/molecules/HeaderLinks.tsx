@@ -1,5 +1,4 @@
 import { HEADER_LINKS } from "@/data";
-import { useLocation } from "react-router";
 import HeaderLinkItem from "../atoms/HeaderLinkItem";
 import { Button } from "../ui/button";
 

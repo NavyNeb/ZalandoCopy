@@ -1,9 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router";
 import Home from "@/pages/home";
 
-type Props = {};
-
-const Router = (props: Props) => {
+const Router = () => {
   return (
     <BrowserRouter>
       <Routes>

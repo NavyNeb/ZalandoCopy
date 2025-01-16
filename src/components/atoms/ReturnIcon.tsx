@@ -1,8 +1,4 @@
-import React from "react";
-
-type Props = {};
-
-const ReturnIcon = (props: Props) => {
+const ReturnIcon = () => {
   return (
     <svg
       viewBox="0 0 24 24"

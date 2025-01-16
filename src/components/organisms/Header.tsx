@@ -1,9 +1,7 @@
 import {
   useAnimate,
   motion,
-  stagger,
-  transform,
-  AnimatePresence,
+  stagger
 } from "framer-motion";
 import logo from "../../assets/app_logo.svg";
 import HeaderLinks from "../molecules/HeaderLinks";

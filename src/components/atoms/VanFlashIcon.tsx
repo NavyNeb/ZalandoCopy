@@ -1,8 +1,4 @@
-import React from "react";
-
-type Props = {};
-
-const VanFlashIcon = (props: Props) => {
+const VanFlashIcon = () => {
   return (
     <svg
       viewBox="0 0 24 24"
