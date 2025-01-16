@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import ProductImageGallery from '../organisms/ProductImageGallery'
 import ProductInfoSection from '../organisms/ProductInfoSection'
 
@@ -45,13 +44,13 @@ const ProductDetailsSection = (props: Props) => {
 
   return (
     <div className="bg-white">
-      <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-        <div className="lg:grid lg:grid-cols-2 lg:items-start lg:gap-x-8">
+      <div className="mx-auto w-full px-6 py-16 sm:py-24 lg:max-w-7xl">
+        <div className="md:grid md:grid-cols-2 md:items-start md:gap-x-3 lg:gap-x-8">
           {/* Image gallery */}
          <ProductImageGallery product={product} />
 
           {/* Product info */}
-        <ProductInfoSection product={product} />
+        <ProductInfoSection  />
         </div>
       </div>
     </div>

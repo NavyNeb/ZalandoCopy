@@ -1,5 +1,3 @@
-import React from "react";
-
 type HeaderLinksType = {
     title: string;
     path: string;
@@ -24,9 +22,24 @@ type DeliveryDataType = {
     price?: string
 }
 
+type ProductType = {
+    id: number;
+    image: string;
+    name: string;
+    boutique: string;
+    price: string;
+    premium: boolean;
+    reduction: {
+        text: string;
+        percent: string;
+    };
+    promo: boolean;
+}
+
 export type { 
     HeaderLinksType,
     FooterLinksType,
     SizesDataType,
-    DeliveryDataType
+    DeliveryDataType,
+    ProductType
  };

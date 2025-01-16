@@ -31,7 +31,7 @@ export const SizeDropdownProvider: React.FC<{ children: React.ReactNode }> = ({ 
   
     // Close the dropdown when clicking outside
     useEffect(() => {
-      const handleClickOutside = (event: MouseEvent) => {
+      const handleClickOutside = () => {
         // Here you can add logic to determine if the click was outside the dropdown
         // For example, checking the event target against a ref
     

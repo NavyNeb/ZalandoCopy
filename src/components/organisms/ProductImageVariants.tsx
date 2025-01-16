@@ -1,9 +1,7 @@
-import React from 'react'
 import VariantImage from '../molecules/VariantImage';
 
-type Props = {}
 
-const ProductImageVariants = (props: Props) => {
+const ProductImageVariants = () => {
   return (
     <div>
         <span className='sr-only' >Variants Images</span>

@@ -1,11 +1,9 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { Button } from '../ui/button'
 import { HeartIcon } from '@heroicons/react/24/outline'
 import { HeartIcon as HeartSolidIcon } from '@heroicons/react/24/solid'
 
-type Props = {}
-
-const ProductCTA = (props: Props) => {
+const ProductCTA = () => {
     const [isFav, setIsFav] = useState<boolean>(false);
 
     const toggleFav = () => {

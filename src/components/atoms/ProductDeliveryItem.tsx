@@ -1,4 +1,3 @@
-import React from "react";
 import { DeliveryDataType  } from "types";
 
 type Props = {

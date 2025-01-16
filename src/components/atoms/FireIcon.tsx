@@ -1,8 +1,4 @@
-import React from "react";
-
-type Props = {};
-
-const FireIcon = (props: Props) => {
+const FireIcon = () => {
   return (
     <svg
       viewBox="0 0 24 24"

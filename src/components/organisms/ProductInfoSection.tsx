@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import ProductImageVariants from "./ProductImageVariants";
 import Tips from "../molecules/Tips";
 import RecommendationIcon from "../atoms/RecommendationIcon";
@@ -12,11 +11,7 @@ import { classNames } from "@/lib/utils";
 import { Button } from "../ui/button";
 import { FlagIcon, Plus } from "lucide-react";
 
-type Props = {
-  product: any;
-};
-
-const ProductInfoSection = ({ product }: Props) => {
+const ProductInfoSection = () => {
   return (
     <div className="mt-10 space-y-10 px-4 sm:mt-16 sm:px-0 lg:mt-0">
       {/* Product title and Price section */}

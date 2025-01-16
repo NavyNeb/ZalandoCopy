@@ -23,7 +23,7 @@ const ProductSizeItem = ({ item, selectedSize, onClickSelect }: Props) => {
             : ""
         )}
       >
-        <button className="flex items-center justify-between w-full py-1">
+        <button className="flex items-center justify-between flex-1 py-1">
           <span
             className={classNames(
               "text-base font-helveticaBold pl-5 uppercase",
@@ -35,7 +35,7 @@ const ProductSizeItem = ({ item, selectedSize, onClickSelect }: Props) => {
         </button>
         <span
           className={classNames(
-            "text-sm text-black text-right pr-3 w-full",
+            "text-sm text-black line-clamp-1 text-right pr-3 w-full",
             info === "Épuisé"
               ? "text-text-interactive font-helveticaBold"
               : "text-black font-helveticaRegular"

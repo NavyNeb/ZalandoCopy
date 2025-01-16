@@ -1,11 +1,11 @@
 import { DELIVERY_DATA } from "@/data";
-import React from "react";
 import ProductDeliveryItem from "../atoms/ProductDeliveryItem";
 import { DeliveryDataType } from "types";
+import { useSizeDropdownContext } from "@/context/SizeDropdownContext";
 
-type Props = {};
 
-const ProductDelivery = (props: Props) => {
+const ProductDelivery = () => {
+    const {  } = useSizeDropdownContext();
   return (
     <ul className="flex flex-col items-center justify-center border border-border-secondary divide-y divide-border-secondary">
         <div className="w-full px-5 py-4 ">
