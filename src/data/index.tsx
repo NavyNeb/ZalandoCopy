@@ -66,7 +66,7 @@ const DELIVERY_DATA: DeliveryDataType[] = [
         iconTitle: undefined,
         title: "ven 17 janv - sam 18 janv",
         type: "Livraison Standard",
-        price: undefined,
+        price: "gratuit",
     },
     {
         icon: <VanFlashIcon />,
