@@ -29,6 +29,10 @@ body {
 @layer base {
   :root {
     --radius: 0.5rem;
+    --grid-max-width: 1280px;
+    --grid-margin: 32px;
+    --grid-gutter: 16px;
+
   }
 
   @font-face {
@@ -76,5 +80,32 @@ body {
   .xs-normal-text {
     @apply text-xs text-black font-helveticaRegular
   }
+
+  .product-container {
+    @apply flex items-center justify-between mb-4 md:mb-6;
+    padding-left: calc(var(--grid-margin) - var(--grid-gutter)/2);
+    padding-right: calc(var(--grid-margin) - var(--grid-gutter)/2);
+  }
+
+  .product-container-image {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+
+  @media screen and (min-width:1280px) {
+    .product-container {
+      padding-left: calc(50% - var(--grid-max-width)/2 + var(--grid-margin)*2/2);
+      padding-right: calc(50% - var(--grid-max-width)/2 + var(--grid-margin)*2/2);
+    }
+
+    .product-container-image {
+      padding-left: calc(50% - var(--grid-max-width)/2 + var(--grid-margin)*2/2);
+      padding-right: calc(50% - var(--grid-max-width)/2 + var(--grid-margin)*2/2);
+    }
+  }
+
+  
+  
 }
 

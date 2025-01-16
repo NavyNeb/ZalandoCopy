@@ -9,14 +9,14 @@ const ProductItem = ({ product }: Props) => {
   return (
     <li
       key={product.id}
-      className="min-w-72 basis-[33.333%] overflow-hidden relative bg-transparent flx flex-col items-start"
+      className="w-[50%] basis-[50%] md:w-[25%] md:basis-[25%] shrink-0 snap-start snap-always h-full cursor-pointer overflow-hidden bg-transparent flx flex-col items-start"
     >
-      <article>
-        <div className="relative">
+      <article className="w-full h-full" >
+        <div className="relative w-full h-auto">
           <img
             src={product.image}
             alt={product.name}
-            className="max-w-full bg-transparent object-cover object-center"
+            className="w-full h-full bg-transparent object-cover object-center"
           />
           {product.promo && (
             <div className="bg-red-700 h-6 w-fit text-white text-xs font-helveticaMedium p-2 flex items-center justify-center absolute bottom-2 left-">
@@ -25,7 +25,7 @@ const ProductItem = ({ product }: Props) => {
           )}
         </div>
         <div className="bg-transparent">
-          <p className="text-black text-xs font-helveticaMedium leading-none mt-2">
+          <p className="text-black text-sm font-helveticaMedium leading-none mt-2">
             {product.boutique}
           </p>
           <h3 className="sm-normal-text mt-1">{product.name}</h3>

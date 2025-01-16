@@ -19,7 +19,7 @@ const ProductDelivery = () => {
             J'adhère à Plus
             </p>
         </div>
-        <ul className="flex flex-col items-center justify-center mx-6 border border-border-secondary divide-y divide-border-secondary">
+        <ul className="flex flex-col items-center justify-center border border-border-secondary divide-y divide-border-secondary">
         {selectedSize && <div className="w-full px-5 py-4 ">
                 <span className="sm-normal-text" >Vendu et envoyé par   <span className='text-text-interactive text-sm font-helveticaBold' >Zalando</span></span>
         </div>  }

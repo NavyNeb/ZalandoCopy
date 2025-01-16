@@ -5,9 +5,8 @@ import ProductInfoSection from '../organisms/ProductInfoSection'
 const ProductDetailsSection = () => {
 
   return (
-    <div className="bg-white">
-      <div className="mx-auto w-full md:px-6 py-16 sm:py-24 lg:max-w-[1478px]">
-        <div className="md:grid md:grid-cols-2 md:items-start md:gap-x-3 lg:gap-x-8">
+      <div className="mx-auto product-container">
+        <div className="w-full grid grid-cols-1 gap-5 lg:gap-x-0 md:grid-cols-2">
           {/* Image gallery */}
          <ProductImageGallery />
 
@@ -15,7 +14,6 @@ const ProductDetailsSection = () => {
         <ProductInfoSection  />
         </div>
       </div>
-    </div>
   )
 }
 

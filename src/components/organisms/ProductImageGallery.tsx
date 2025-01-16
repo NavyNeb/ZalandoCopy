@@ -4,7 +4,7 @@ import image3 from "@/assets/images/shoes3.jpg";
 import { classNames } from "@/lib/utils";
 import { useState } from "react";
 import { Button } from "../ui/button";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import LikeButton from "../molecules/LikeButton";
 
 const ProductImageGallery = () => {
   const [currentImage, setCurrentImage] = useState<number>(0);
@@ -24,20 +24,20 @@ const ProductImageGallery = () => {
   }
 
   return (
-    <div className="flex items-start justify-start gap-x-3 flex-1 w-full">
+    <div className="flex items-start justify-start gap-x-3 flex-1 md:w-full">
       {/* Image selector */}
-      <div className="hidden lg:flex flex-col items-center justify-start gap-y-3">
+      <div className="hidden lg:flex lg:w-[14.66667%] flex-col items-center justify-start gap-y-3">
         {productImages.map((image, index: number) => (
           <div
             className={classNames(
-              "hover:right-1 hover:ring-black",
+              "h-auto w-full hover:right-1 hover:ring-black",
               "cursor-pointer",
               index === currentImage ? "ring-2 ring-black" : "" // Highlight the currently selected image
             )}
           >
             <img
               className={classNames(
-                "w-20 h-[122px] object-cover object-center"
+                "w-full h-full object-fill object-center"
               )}
               src={image}
               alt="Product image"
@@ -46,8 +46,8 @@ const ProductImageGallery = () => {
           </div>
         ))}
       </div>
-      <div className="flex-1 flex flex-col items-start justify-start bg-re">
-        <div className="h-[780px] w-[100%] lg:w-[85%] lg:min-w-[456px] lg:h-[756px] relative">
+      <div className="flex-1 md:w-[83.33333%] flex flex-col items-start justify-start ">
+        <div className="h-[768px] md:h-auto w-full relative">
           <img
             src={productImages[currentImage]}
             className="w-full h-full object-cover object-center"
@@ -55,13 +55,14 @@ const ProductImageGallery = () => {
           />
           {/* Left Icon */}
           { currentImage !== 0 && <Button onClick={decrementImage} variant={"outline"} size={"icon"} className="absolute inset-y-[45%] flex lg:hidden" >
-            <ChevronLeft size={32} className="w-12 h-12" />
+            <svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="1rem" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="m15 18-6-6 6-6"/></svg>
           </Button>}
 
             {/* Right Icon */}
-            <Button onClick={incrementImage} variant={"outline"} size={"icon"} className="absolute inset-y-[45%] right-0 flex lg:hidden" >
-            <ChevronRight size={32} className="w-12 h-12" />
-          </Button>
+           {currentImage !== 2 && <Button onClick={incrementImage} variant={"outline"} size={"icon"} className="absolute inset-y-[45%] right-0 flex lg:hidden" >
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><path d="m9 18 6-6-6-6"/></svg>
+          </Button>}
+          <LikeButton />
         </div>
       </div>
     </div>

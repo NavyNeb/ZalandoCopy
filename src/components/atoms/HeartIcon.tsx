@@ -4,7 +4,7 @@ type Props = {
     fill?: string
 }
 
-const HeartIcon = ({ height="1.2em", width="1.2em", fill="#000" }: Props) => {
+const HeartIcon = ({ height="1.4rem", width="1.4rem", fill="#000" }: Props) => {
   return (
     <svg viewBox="0 0 24 24" width={width} height={height} fill={fill} focusable="false">
     <path
