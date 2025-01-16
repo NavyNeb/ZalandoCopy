@@ -6,7 +6,7 @@ type Props = {
   current?: boolean;
 };
 
-const VariantImage = ({ src, current }: Props) => {
+const VariantImage = ({ current }: Props) => {
   return (
     <ul className="inline-flex list-none flex-row items-center justify-start space-x-3">
       <li

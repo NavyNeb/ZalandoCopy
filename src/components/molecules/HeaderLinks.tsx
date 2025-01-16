@@ -2,9 +2,7 @@ import { HEADER_LINKS } from "@/data";
 import HeaderLinkItem from "../atoms/HeaderLinkItem";
 import { Button } from "../ui/button";
 
-type Props = {}
-
-const HeaderLinks = (props: Props) => {
+const HeaderLinks = () => {
     // const { pathname } = useLocation();
   return (
     <div className='hidden md:flex flex-row items-center justify-center space-x-2' >
