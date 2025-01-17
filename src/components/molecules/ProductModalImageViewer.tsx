@@ -119,7 +119,7 @@ const ProductModalImageViewer: React.FC<Props> = ({
                 </button>
 
                 {/* Close button */}
-                <button onClick={onForwardClick}>
+                <button onClick={onClose}>
                   <X size={24} className="ml-3" />
                 </button>
               </div>
