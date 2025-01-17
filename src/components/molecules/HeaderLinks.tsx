@@ -11,7 +11,7 @@ const HeaderLinks = () => {
   }
 
   return (
-    <div className='hidden md:flex flex-row items-center justify-center space-x-2' >
+    <div className='hidden lg:flex flex-row items-center justify-center space-x-2' >
         {
             HEADER_LINKS.map(({ title, path }, index) => (
                 <HeaderLinkItem setActive={handleLinkClick} active={activeLink} key={index} lable={title} path={path} />

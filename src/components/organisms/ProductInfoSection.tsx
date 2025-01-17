@@ -13,7 +13,7 @@ import { FlagIcon, Plus } from "lucide-react";
 
 const ProductInfoSection = () => {
   return (
-    <div className="w-full flex flex-col items-end" >
+    <div className="product-container mb-0 w-full flex flex-col items-end" >
       <div className="mt-6 w-full lg:w-[81.66666%] sm:mt-0 space-y-10 ">
         {/* Product title and Price section */}
         <div className="" >

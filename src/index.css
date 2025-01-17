@@ -101,6 +101,9 @@ body {
       padding-right: calc(50% - var(--grid-max-width)/2 + var(--grid-margin)*2/2);
     }
 
+  }
+
+  @media screen and (max-width:768px) {
     .product-container-image {
       padding-left: calc(50% - var(--grid-max-width)/2 + var(--grid-margin)*2/2);
       padding-right: calc(50% - var(--grid-max-width)/2 + var(--grid-margin)*2/2);
