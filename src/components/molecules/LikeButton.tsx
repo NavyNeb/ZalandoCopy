@@ -1,9 +1,7 @@
 import { motion } from "framer-motion";
-import React, { useState } from "react";
+import { useState } from "react";
 
-type Props = {};
-
-const LikeButton = (props: Props) => {
+const LikeButton = () => {
   const [isFav, setIsFav] = useState<boolean>(false);
 
   const handleClick = ()=> {
