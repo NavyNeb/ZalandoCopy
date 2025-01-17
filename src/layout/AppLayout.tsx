@@ -1,3 +1,4 @@
+import Footer from '@/components/organisms/Footer';
 import Header from '@/components/organisms/Header';
 import React from 'react';
 import { Outlet } from 'react-router-dom';
@@ -6,19 +7,17 @@ import { Outlet } from 'react-router-dom';
 
 const AppLayout: React.FC = () => {
   return (
-    <div className="flex flex-col my-5 min-h-screen w-screen">
+    <div className=" overflow-scroll">
       {/* Navigation Bar */}
       <Header />
 
       {/* Main Content */}
-      <main className="flex-1 my-3 bg-white">
+      <main className='h-screen w-screen bg-transparent overflow-auto' >
         <Outlet />
       </main>
 
       {/* Footer */}
-      {/* <footer className="bg-gray-800 text-white text-center p-4">
-        <p>LeJangui © {new Date().getFullYear()}</p>
-      </footer> */}
+      <Footer />
     </div>
   );
 };

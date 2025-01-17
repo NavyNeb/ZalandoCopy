@@ -2,15 +2,15 @@ import HeaderLinks from "../molecules/HeaderLinks";
 import ZalandoLogo from "../atoms/ZalandoLogo";
 import { HEADER_ICONS } from "@/data";
 import HeaderDropdownIcons from "../molecules/HeaderDropdownIcons";
+import ProductCategoryNavigation from "../molecules/ProductCategoryNavigation";
 
 const Header = () => {
 
   return (
-    <header className="py-3 mb-3 border-b border-border-secondary bg-white w-screen relative">
-      <nav className="product-container mx-auto h-full ">
-        {/* <img src={logo} className="h-[40px] w-32 object-contain " /> */}
+    <header className="mb-3 border-b pt-3 h-fit border-border-secondary bg-white w-screen relative">
+      <nav className="product-container mb-2 m-0 ">
         <HeaderLinks />
-        <div className = "flex items-center justify-center" >
+        <div className = "flex items-center justify-center " >
           <ZalandoLogo />
           <div className = "w-[1px] shrink-0 mx-6 h-6 bg-border-secondary" />
           <div className="flex items-center justify-start w-full gap-2 mt-1">
@@ -20,16 +20,15 @@ const Header = () => {
             </span>
           </div>
         </div>
-        <div className = "row-flex" >
+        <div className = "row-flex gap-x-1" >
          {
           HEADER_ICONS.map((icon, index: number) => (
-            <HeaderDropdownIcons {...icon} key={index} />
+            <HeaderDropdownIcons {...icon} index={index} key={index} />
           ))
          }
         </div>
       </nav>
-
-     
+      <ProductCategoryNavigation />     
     </header>
   );
 };

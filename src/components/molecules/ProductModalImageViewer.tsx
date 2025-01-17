@@ -61,7 +61,7 @@ const ProductModalImageViewer: React.FC<Props> = ({
             transition={{ duration: 0.5 }}
             src={images[currentImageIndex]}
             alt="Product image"
-            className="object-fill object-center w-full h-full min-w-full md:min-w-[1090px] max-w-7xl"
+            className="object-fill object-center min-w-[240px]: h-full sm:w-full lg:max-w-3xl"
           />
           {/* </div> */}
 
@@ -69,7 +69,7 @@ const ProductModalImageViewer: React.FC<Props> = ({
           <div className="absolute top-2 right-2 hidden lg:block">
             <Button size={"icon"} variant={"outline"} onClick={onClose}>
               <span>
-                <X size={24} className="h-12 w-12" />
+                <X size={24}  />
               </span>
             </Button>
           </div>

@@ -1,7 +1,7 @@
 import { PRODUCTS, PRODUCTS_MAIN } from "@/data";
 import ProductMain from "../molecules/ProductMain";
 import ProductItem from "../molecules/ProductItem";
-import { Info, MoveRight } from "lucide-react";
+import { Info, MoveRight } from "lucide-react"
 
 type Props = {
   title?: string;
@@ -48,7 +48,9 @@ const ProductListRow = ({ title, desc, type = "products" }: Props) => {
         {type === "products" &&
           PRODUCTS.map((product, index) => {
             return <ProductItem product={product} key={index} />;
-          })}
+          })
+         
+          }
       </ul>
     </div>
   );

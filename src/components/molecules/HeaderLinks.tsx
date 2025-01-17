@@ -1,6 +1,5 @@
 import { HEADER_LINKS } from "@/data";
 import HeaderLinkItem from "../atoms/HeaderLinkItem";
-import { Button } from "../ui/button";
 import { useState } from "react";
 import { HeaderLinksType } from "types";
 

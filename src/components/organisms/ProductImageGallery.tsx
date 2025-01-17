@@ -35,7 +35,7 @@ const ProductImageGallery = () => {
 
   return (
     <>
-      <div className="flex items-start justify-start gap-x-3 flex-1 md:w-full">
+      <div className="sticky flex items-start justify-start gap-x-3 flex-1 md:w-full">
         {/* Image selector */}
         <div className="hidden lg:flex lg:w-[14.66667%] flex-col items-center justify-start gap-y-3">
           {productImages.map((image, index: number) => (

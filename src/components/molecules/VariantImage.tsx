@@ -1,5 +1,6 @@
 import { classNames } from "@/lib/utils";
 import shoesImage from '@/assets/images/shoes.jpg'
+import shoesImage2 from '@/assets/images/shoes2.jpg'
 
 type Props = {
   src?: string;
@@ -27,7 +28,7 @@ const VariantImage = ({ current }: Props) => {
         )}
       >
         <img
-          src={shoesImage}
+          src={shoesImage2}
           className="w-full h-full object-cover"
         />
       </li>
