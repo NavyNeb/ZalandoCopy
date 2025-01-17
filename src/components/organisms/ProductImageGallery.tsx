@@ -34,7 +34,7 @@ const ProductImageGallery = () => {
   };
 
   return (
-    <div className=".product-container-image" >
+    <>
       <div className="sticky flex items-start justify-start gap-x-3 flex-1 md:w-full">
         {/* Image selector */}
         <div className="hidden lg:flex lg:w-[14.66667%] flex-col items-center justify-start gap-y-3">
@@ -136,7 +136,7 @@ const ProductImageGallery = () => {
         setCurrentImageIndex={setCurrentImage}
         onClose={() => setExpanded(false)}
       />
-    </div>
+    </>
   );
 };
 
