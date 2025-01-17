@@ -17,9 +17,9 @@ const AppLayout: React.FC = () => {
       </main>
 
       {/* Footer */}
-      <footer className="bg-gray-800 text-white text-center p-4">
+      {/* <footer className="bg-gray-800 text-white text-center p-4">
         <p>LeJangui © {new Date().getFullYear()}</p>
-      </footer>
+      </footer> */}
     </div>
   );
 };

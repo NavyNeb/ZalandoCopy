@@ -11,7 +11,7 @@ const LikeButton = (props: Props) => {
   } 
 
   return (
-    <button onClick={handleClick} className="bg-white absolute h-10 w-10 flex items-center justify-center right-0 top-2 md:hidden">
+    <button onClick={handleClick} className="bg-white absolute h-10 w-10 flex items-center justify-center right-0 top-2">
       <motion.svg
         xmlns="http://www.w3.org/2000/svg"
         width="28"
