@@ -3,8 +3,7 @@ import ZalandoLogo from "../atoms/ZalandoLogo";
 import { HEADER_ICONS } from "@/data";
 import HeaderDropdownIcons from "../molecules/HeaderDropdownIcons";
 import ProductCategoryNavigation from "../molecules/ProductCategoryNavigation";
-import { BellIcon, SearchIcon, X } from "lucide-react";
-import { Bars3BottomLeftIcon } from "@heroicons/react/24/outline";
+import { SearchIcon, X } from "lucide-react";
 
 const Header = () => {
 
