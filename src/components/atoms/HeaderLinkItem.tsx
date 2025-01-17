@@ -1,20 +1,23 @@
+import { classNames } from '@/lib/utils';
 import { motion } from 'framer-motion';
-import React from 'react'
+import { HeaderLinksType } from "types";
+
 
 type Props = {
     lable: string;
     path: string;
-    active: boolean;
-    animated?: boolean;
+    setActive: (val: HeaderLinksType)=> void;
+    active: HeaderLinksType;
 }
 
-const HeaderLinkItem = ({ active, lable, animated }: Props) => {
-
-    const _handleClick = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
-        e.preventDefault();
-    }
+const HeaderLinkItem = ({ active, lable, setActive, path }: Props) => {
+  const isActive = active.title === lable;
+    
   return (
-    <motion.button whileHover={{scale: animated ? 1.1 : 1 }} onClick={_handleClick} className={`font-poppinsMedium bg-transparent px-3 ${ animated ? 'text-6xl' : 'text-base' } ${active ? 'text-primary' : 'text-appNeutral-400'} hover:text-primary`} >
+    <motion.button onClick={()=> setActive({ title: lable, path })} className={classNames(
+      `font-helveticaBold px-4 py-2 hover:bg-[#00000015]`,
+      isActive ? 'text-white bg-black' : 'text-black bg-transparent'
+  )} >
         {lable}
     </motion.button>
   )

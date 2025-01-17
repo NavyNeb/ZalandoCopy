@@ -3,24 +3,27 @@ import { HeaderLinksType, DeliveryDataType, SizesDataType, ProductType } from '.
 import VanFlashIcon from '@/components/atoms/VanFlashIcon';
 import ReturnIcon from '@/components/atoms/ReturnIcon';
 import ShoesImage from "@/assets/images/shoes.jpg";
+import WorldIcon from '@/components/atoms/WorldIcon';
+import UserIcon from '@/components/atoms/UserIcon';
+import HeartIcon from '@/components/atoms/HeartIcon';
+import BagIcon from '@/components/atoms/BagIcon';
+import AccountDropdownItem from '@/components/molecules/AccountDropdownItem';
+import CardDropdownElement from '@/components/molecules/CardDropdownElement';
 
 const HEADER_LINKS: HeaderLinksType[] = [
     {
-        title: "Home",
-        path: "/home",
+        title: "Homme",
+        path: "/homme",
     },
     {
-        title: "Menu",
-        path: "/menu",
+        title: "Femme",
+        path: "/femme",
     },
     {
-        title: "Blog",
-        path: "/blog",
+        title: "Enfant",
+        path: "/enfant",
     },
-    {
-        title: "Contact",
-        path: "/contact",
-    },
+
 ];
 
 const SIZES_DATA: SizesDataType[] = [
@@ -107,6 +110,28 @@ const PRODUCTS_MAIN = [
     // Add more products as needed
   ];
 
+  const HEADER_ICONS = [
+      {
+          icon: <WorldIcon />,
+          dropable: false,
+          children: null
+      },
+      {
+        icon: <UserIcon />,
+          dropable: true,
+          children: <AccountDropdownItem />
+      },
+      {
+        icon: <HeartIcon />,
+          dropable: false,
+          children: null
+      },
+      {
+        icon: <BagIcon />,
+          dropable: true,
+          children: <CardDropdownElement />
+      }
+  ]
 // Mocked data for the sake of this example
 
 
@@ -117,5 +142,6 @@ export {
     MATERIAL_DATA,
     DELIVERY_DATA,
     PRODUCTS_MAIN,
-    PRODUCTS
+    PRODUCTS,
+    HEADER_ICONS
 };

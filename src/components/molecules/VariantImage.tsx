@@ -8,7 +8,7 @@ type Props = {
 
 const VariantImage = ({ current }: Props) => {
   return (
-    <ul className="inline-flex list-none flex-row items-center justify-start space-x-3">
+    <ul className="flex list-none flex-row items-center justify-start space-x-3">
       <li
         className={classNames(
           `h-24 w-16 flex items-center justify-center hover:ring-2 hover:ring-black`,

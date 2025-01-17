@@ -9,7 +9,7 @@
 
   color-scheme: light dark;
   color: #23262F;
-  background-color: #FCFCFD;
+  background-color: #FFFFFF;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -63,6 +63,10 @@ body {
   @font-face {
     font-family: "Tiempos-Medium";
     src: url('./assets/fonts/TiemposHeadline-Medium.otf') format('otf');
+  }
+
+  .row-flex {
+     @apply flex items-center justify-between;
   }
 
   .sm-bold-text {

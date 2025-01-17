@@ -1,3 +1,4 @@
+import Header from '@/components/organisms/Header';
 import React from 'react';
 import { Outlet } from 'react-router-dom';
 
@@ -7,9 +8,7 @@ const AppLayout: React.FC = () => {
   return (
     <div className="flex flex-col my-5 min-h-screen w-screen">
       {/* Navigation Bar */}
-      <header>
-        { /* Add your navigation bar here */ }
-      </header>
+      <Header />
 
       {/* Main Content */}
       <main className="flex-1 my-3 bg-white">
